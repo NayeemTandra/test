@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 400;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --padding:1rem;
+    --text-white:white ;
+    --text-black:black;
+    --box-shadow:.3rem .3rem .5rem ,
+    -.3rem 0rem .5rem;
+}
+
+/* nav section started header */
+
+#nav--section{
+    background-color: rgb(238, 215, 215);
+    box-shadow: .4rem .4rem .4rem #a49f9f,-.4rem 0rem .4rem #a49f9f;
+
+}
+
+.nav--header{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main--logo{
+   font-size: 3rem;
+   color: rgb(18, 18, 161);
+   
+}
+
+.nav--target{
+    font-size: 1.6rem;
+    color: aqua;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    transition: all .3s linear;
+    display: none;
+}
+
+.nav--targer:hover{
+    color: gray;
+    transform: rotate(90deg);
+}
+
+.nav__link{
+    margin: .6rem;
+   
+    color: #a49f9f;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.nav__link:hover{
+    padding-left: 1.5rem;
+    color: blue;
+}
+
+.nav__icon{
+    margin: .6rem;
+   
+    color: #a49f9f;
+    font-size: 1.2rem;
+    
+}
+
+.nav__icon:hover{
+    padding-left: 1.5rem;
+    color: blue;
+}
+
+.nav--ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+
+.nav--links,.nav--icons{
+    display: flex;
+}
+
+.nav-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/* .nav--ul{
+    width: 0;
+    overflow: hidden;
+} */
+
+/* nav section started header */
+
+
+/* responcive started here  */
+
+@media screen and (max-width:992px){
+    
+}
+
+@media (max-width:768px){
+    .nav--target{
+        display: block;
+        margin-left: 75vw;
+    }
+    .nav--ul{
+        height:0 ;
+        overflow: hidden;
+        gap: 10vw;
+    }
+    .show-ul{
+        height: auto;
+
+    } 
+
+    .nav-center,.nav--links,.nav--icons{
+       flex-direction: column;
+
+    }
+    
+}
+
+@media screen and (max-width:660px){
+    
+    
+}
+
+
+/* responcive started here */
